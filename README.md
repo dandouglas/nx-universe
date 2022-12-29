@@ -11,9 +11,9 @@ The "Universe" app is the host application.
 1. Run `npm i` in the root of the project
 2. Run `ng serve universe` in the root to run the host application
 
-Once the host (Universe) application has been launched you can navigate between the remote apps by clicking the links.
+Once the host (`./apps/universe`) application has been launched you can navigate between the remote apps by clicking the links.
 
-This may not look exciting but if you look at the Network tab you will see that the host application (Universe) is being served on `http://localhost:4200/`and when the "Planet One" link is clicked, the content is loaded from `http://localhost:4202/` and, Planet Two is loaded from `http://localhost:4203/`.
+This may not look exciting but if you look at the Network tab you will see that the host application (`./apps/universe`) is being served on `http://localhost:4200/`and when the "Planet One" (`./apps/planet-one`) link is clicked, the content is loaded from `http://localhost:4202/` and, Planet Two (`./apps/planet-two`) is loaded from `http://localhost:4203/`.
 
 ### Planet One
 
