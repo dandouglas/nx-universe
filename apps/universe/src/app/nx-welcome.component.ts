@@ -5,13 +5,18 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'nx-universe-nx-welcome',
   template: `
-    <!--
-     * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     This is a starter component and can be deleted.
-     * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     Delete this file and get started with your project!
-     * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     -->
+    <div class="wrapper">
+      <div class="container">
+        <!--  WELCOME  -->
+        <div id="welcome">
+          <h1>
+            <span> Hello there, </span>
+            Welcome to the Kody Universe 👋
+          </h1>
+        </div>
+      </div>
+    </div>
+
     <style>
       html {
         -webkit-text-size-adjust: 100%;
@@ -110,75 +115,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
         font-weight: 300;
         line-height: 2.25rem;
         margin-bottom: 0.5rem;
-      }
-      #hero {
-        align-items: center;
-        background-color: hsla(214, 62%, 21%, 1);
-        border: none;
-        box-sizing: border-box;
-        color: rgba(55, 65, 81, 1);
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 3.5rem;
-      }
-      #hero .text-container {
-        color: rgba(255, 255, 255, 1);
-        padding: 3rem 2rem;
-      }
-      #hero .text-container h2 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        position: relative;
-      }
-      #hero .text-container h2 svg {
-        color: hsla(162, 47%, 50%, 1);
-        height: 2rem;
-        left: -0.25rem;
-        position: absolute;
-        top: 0;
-        width: 2rem;
-      }
-      #hero .text-container h2 span {
-        margin-left: 2.5rem;
-      }
-      #hero .text-container a {
-        background-color: rgba(255, 255, 255, 1);
-        border-radius: 0.75rem;
-        color: rgba(55, 65, 81, 1);
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 1rem 2rem;
-        text-decoration: inherit;
-      }
-      #hero .logo-container {
-        display: none;
-        justify-content: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-      #hero .logo-container svg {
-        color: rgba(255, 255, 255, 1);
-        width: 66.666667%;
-      }
-
-      #middle-content {
-        align-items: flex-start;
-        display: grid;
-        gap: 4rem;
-        grid-template-columns: 1fr;
-        margin-top: 3.5rem;
-      }
-
-      #learning-materials {
-        padding: 2.5rem 2rem;
-      }
-      #learning-materials h2 {
-        font-weight: 500;
-        font-size: 1.25rem;
-        letter-spacing: -0.025em;
-        line-height: 1.75rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
       .list-item-link {
         align-items: center;
@@ -427,17 +363,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
         }
       }
     </style>
-    <div class="wrapper">
-      <div class="container">
-        <!--  WELCOME  -->
-        <div id="welcome">
-          <h1>
-            <span> Hello there, </span>
-            Welcome to the Kody Universe 👋
-          </h1>
-        </div>
-      </div>
-    </div>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None,
